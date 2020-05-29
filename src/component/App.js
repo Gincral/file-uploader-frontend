@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Task from './tasks';
+import Home from './home';
 import history from '../history';
 
 
@@ -10,7 +10,7 @@ class App extends React.Component {
             <div className="app">
                 <BrowserRouter history={history}>
                     <Switch>
-                        <Route path="/" exact component={Task} />
+                        <Route path="/" exact component={Home} />
                     </Switch>
                 </BrowserRouter>
             </div>
