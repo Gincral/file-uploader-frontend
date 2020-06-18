@@ -12,7 +12,7 @@ class Home extends React.Component {
     }
 
     componentDidMount = () => {
-        axios.get(`http://localhost:5000/files`)
+        axios.get(`http://file-uploader-backend-file-uploader-frontend.apps.nina-love-lobster.ninalovelobster.com/files`)
             .then(res => {
                 this.setState({ dataList: res.data });
             })
